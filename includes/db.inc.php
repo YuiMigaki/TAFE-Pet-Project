@@ -1,0 +1,13 @@
+<?php
+try
+{
+  $pdo = new PDO('mysql:host=localhost:3306;dbname=fenthree', 'organicokayama.life_q2woy', 't256A$qKQj');
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $pdo->exec('SET NAMES "utf8"');
+}
+catch (PDOException $e)
+{
+  $error = 'Unable to connect to the database server.';
+  include 'error.html.php';
+  exit();
+}

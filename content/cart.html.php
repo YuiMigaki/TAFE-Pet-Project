@@ -1,0 +1,80 @@
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/helpers.inc.php'; ?>
+
+<main id="cart">
+
+    <p class="top-title">Organic Produce Shop from the Land of Sunshine, Okayama JAPAN</p>
+
+    <aside id="vege-card">
+        <section>
+            <h2>Shopping Cart</h2>
+            <picture>
+            <source srcset="img/tomato.jpg" media="(max-width: 900px)">
+            <img src="img/tomato.jpg" alt="An image of momotaro tomato"><!--https://organiclife-fenthree.com-->
+            </picture>
+            <picture>
+            <source srcset="img/eggplant.jpg" media="(max-width: 900px)">
+            <img src="img/eggplant.jpg" alt="An image of eggplant"><!--https://organiclife-fenthree.com-->
+            </picture>
+            <picture>
+            <source srcset="img/carrot.jpg" media="(max-width: 900px)">
+            <img src="img/carrot.jpg" alt="An image of carrot"><!--https://organiclife-fenthree.com-->
+            </picture>   
+        </section>                
+    </aside>
+    
+
+
+    
+            <?php include 'shoppingcart/catalog.html.php'; ?>
+            <?php
+            if (!isset($cart)) {
+                $cart = []; 
+            }
+            ?>
+			<?php include 'shoppingcart/cart.html.php'; ?>
+              
+                
+       
+
+
+
+
+
+      
+    <!-- <aside id="price-card">
+        <section>
+            
+            <h3 class="content1">Momotaro Tomato</h3>
+            <button class="btn6">―&emsp; 1&emsp;  +</button>
+            <p class="size">$14.99 per kg</p><br>
+            <h3 class="content1">Eggplant</h3>
+            <button class="btn6">―&emsp;  1&emsp;  +</button>
+            <p class="size">$10.99 per kg</p><br>
+            <h3 class="content1">Carrot</h3>
+            <button class="btn6">―&emsp;  1&emsp;  +</button>
+            <p class="size">$10.99 per kg</p><br>
+            <p class="price">Total:&emsp;$20.00</p>
+
+        </section>
+    </aside> -->
+
+    
+    <!-- <article id="summary">
+        <h2>Order Summary</h2>
+        <p id="content3"></p>
+        <p>Subtotal:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $20.00 <br>____________________________</p><br>
+        <p>Shipping: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a id="link2" href="index/p1.html">Add info</a><br>____________________________ </p><br>
+        <p>Tax:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $2.00<br>____________________________</p><br>
+        <p id="bold">Grand total:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$22.00<br>_________________________</p><br>
+    </article> -->
+    <article id="payment">
+        <h2 id="content4">Payment Options</h2>
+        <p id="content5">We accept afterpay, klarna and:</p>  
+        <img id="card_options" src="img/payment.jpg" alt="A picture of payment_options"><!--https://organiclife-fenthree.com-->
+        <button id="btn7">Delivery</button>
+        <button id="btn8">Collect</button>
+        <button id="btn9">Continue to checkout</button>
+    </article>
+  
+
+</main>
